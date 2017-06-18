@@ -1,18 +1,45 @@
-@charset "UTF-8";
 /* Flexbox */
-.container { /* display: inline-flex; */ display: -webkit-box; display: -ms-flexbox; display: flex; /* усьагавдиваеь высотку элемента = высоте блока */ }
-.container .item { padding: 10px; /* flex: 1; задает ширину лоя каждого элемента конейнера */ }
+.container { 
+	/* display: inline-flex; */
+	display: flex; /* усьагавдиваеь высотку элемента = высоте блока */
+	.item { 
+		padding: 10px;
+
+		/* flex: 1; задает ширину лоя каждого элемента конейнера */
+	}
+	.item-1{
+		
+	}
+	.item-2{
+		
+	}
+	.item-3{
+		
+	}
+}
 
 /* Main */
-.container { background: #fff; padding: 10px; margin: 10px; }
-.container .item { text-align: center; color: #fff; background: #9C27B0; margin: 10px; }
+.container { 
+	  background: #fff;
+	  padding: 10px;
+	  margin: 10px;
+	.item { 
+		text-align: center;
+		color: #fff;
+		background: #9C27B0;
+    	margin: 10px;
+	}
+}
 
-body { background: #a29e9e; }
-
-* { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
+body{
+	background: #a29e9e;
+}
+*{
+	margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html.js .loader { background: none repeat scroll 0 0 #ffffff; bottom: 0; height: 100%; left: 0; position: fixed; right: 0; top: 0; width: 100%; z-index: 9999; }
-
 html.js .loader .loader_inner { background-image: url("../img/preloader.gif"); background-size: cover; background-repeat: no-repeat; background-position: center center; background-color: #fff; height: 60px; width: 60px; margin-top: -30px; margin-left: -30px; left: 50%; top: 50%; position: absolute; }
 
 body { font-family: "RobotoRegular", sans-serif; font-weight: normal; font-size: 14px; min-width: 320px; position: relative; line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
