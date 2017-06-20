@@ -1,16 +1,41 @@
 /* Flexbox */
+/* 
+Для ищменения направления текста
+используют в арабских старнах
+direction: ltr; 
+direction: rtl;
+*/
 .container { 
 	/* display: inline-flex; */
-	display: flex; /* усьагавдиваеь высотку элемента = высоте блока */
+	display: flex;
+	/* Направление осей в контейнере 
+	    flex-direction: column;
+    	flex-direction: column-reverse;
+	    flex-direction: row;
+		flex-direction: row-reverse;
+
+		Горизонтальное выравнивание блоков в контейнере
+		justify-content: flex-end;
+		flex-start;
+		center;
+		space-between;
+		space-around;
+
+		Вертикальное выравнивание блоков в контейнере
+	*/
+
+
+	justify-content: flex-end;
+	flex-direction: row-reverse;
 	.item { 
 		padding: 10px;
-
 		/* flex: 1; задает ширину лоя каждого элемента конейнера */
 	}
 	.item-1{
 		
 	}
 	.item-2{
+
 		
 	}
 	.item-3{
