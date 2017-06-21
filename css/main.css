@@ -1,96 +1,77 @@
 @charset "UTF-8";
 /* Flexbox */
 /* 
+
+- Работа с контейнером
+
+1.устанавливаем контейнер
+dispay: flex;
+2. устонавливаем главную ось
+flex-direction
+3. устонавливаем выравнивание главной оси 
+justify-content
+4. выравниваем по поперечной оси 
+align-items
+
+- Работа с элементами в нутри контейнера
+1. flex-wrap
+2. flex-flow
+3. align-content
+
+- Правила для дочерних элементов flex-контейнера
+1. flex-basis
+2. flex-grow
+3. flex-shrink
+4. flex
+5. align-self
+6. order
+
+
+
+
+
+
 Для ищменения направления текста
 используют в арабских старнах
 direction: ltr; 
 direction: rtl;
 */
-.container {
-  /* display: inline-flex; */
-  display: flex;
-  	/* Направление осей в контейнере 
-  	    flex-direction: column;
-      	flex-direction: column-reverse;
-  	    flex-direction: row;
-  		flex-direction: row-reverse;
-  
-  		Горизонтальное выравнивание блоков в контейнере
-  		justify-content: flex-end;
-  		flex-start;
-  		center;
-  		space-between;
-  		space-around;
-  
-  		Вертикальное выравнивание блоков в контейнере
-  	*/
-  justify-content: flex-end;
-  flex-direction: row-reverse; }
-  .container .item {
-    padding: 10px;
-    /* flex: 1; задает ширину лоя каждого элемента конейнера */ }
+.container { /* display: inline-flex; */ display: -webkit-box; display: -ms-flexbox; display: flex; 	/* Направление осей в контейнере 
+	    flex-direction: column; 	flex-direction: column-reverse;
+	    flex-direction: row;
+		flex-direction: row-reverse;
+
+		Горизонтальное выравнивание блоков в контейнере
+		justify-content: flex-end;
+		flex-start;
+		center;
+		space-between;
+		space-around;
+
+		Вертикальное выравнивание блоков в контейнере
+
+
+		flex-wrap: nowrap | wrap | wrap-reverse;
+	*/ -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+.container .item { padding: 10px; /* flex: 1; задает ширину лоя каждого элемента конейнера */ }
+.container .item-1 { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; /* default 0 */ }
 
 /* Main */
-.container {
-  background: #fff;
-  padding: 10px;
-  margin: 10px; }
-  .container .item {
-    text-align: center;
-    color: #fff;
-    background: #9C27B0;
-    margin: 10px; }
+.container { background: #fff; padding: 10px; margin: 10px; }
+.container .item { text-align: center; color: #fff; background: #9C27B0; margin: 10px; }
 
-body {
-  background: #a29e9e; }
+body { background: #a29e9e; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+* { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-html.js .loader {
-  background: none repeat scroll 0 0 #ffffff;
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 9999; }
+html.js .loader { background: none repeat scroll 0 0 #ffffff; bottom: 0; height: 100%; left: 0; position: fixed; right: 0; top: 0; width: 100%; z-index: 9999; }
 
-html.js .loader .loader_inner {
-  background-image: url("../img/preloader.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #fff;
-  height: 60px;
-  width: 60px;
-  margin-top: -30px;
-  margin-left: -30px;
-  left: 50%;
-  top: 50%;
-  position: absolute; }
+html.js .loader .loader_inner { background-image: url("../img/preloader.gif"); background-size: cover; background-repeat: no-repeat; background-position: center center; background-color: #fff; height: 60px; width: 60px; margin-top: -30px; margin-left: -30px; left: 50%; top: 50%; position: absolute; }
 
-body {
-  font-family: "RobotoRegular", sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  min-width: 320px;
-  position: relative;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden; }
+body { font-family: "RobotoRegular", sans-serif; font-weight: normal; font-size: 14px; min-width: 320px; position: relative; line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 
-body input:focus:required:invalid, body textarea:focus:required:invalid {
-  color: red; }
+body input:focus:required:invalid, body textarea:focus:required:invalid { color: red; }
 
-body input:required:valid, body textarea:required:valid {
-  color: green; }
+body input:required:valid, body textarea:required:valid { color: green; }
 
-.hidden {
-  display: none; }
-
-/*# sourceMappingURL=main.css.map */
+.hidden { display: none; }

@@ -1,5 +1,38 @@
 /* Flexbox */
+
+
+
 /* 
+
+- Работа с контейнером
+
+1.устанавливаем контейнер
+dispay: flex;
+2. устонавливаем главную ось
+flex-direction
+3. устонавливаем выравнивание главной оси 
+justify-content
+4. выравниваем по поперечной оси 
+align-items
+
+- Работа с элементами в нутри контейнера
+1. flex-wrap
+2. flex-flow
+3. align-content
+
+- Правила для дочерних элементов flex-контейнера
+1. flex-basis
+2. flex-grow
+3. flex-shrink
+4. flex
+5. align-self
+6. order
+
+
+
+
+
+
 Для ищменения направления текста
 используют в арабских старнах
 direction: ltr; 
@@ -22,6 +55,9 @@ direction: rtl;
 		space-around;
 
 		Вертикальное выравнивание блоков в контейнере
+
+
+		flex-wrap: nowrap | wrap | wrap-reverse;
 	*/
 
 
@@ -32,7 +68,7 @@ direction: rtl;
 		/* flex: 1; задает ширину лоя каждого элемента конейнера */
 	}
 	.item-1{
-		
+		flex-grow: 1; /* default 0 */
 	}
 	.item-2{
 
