@@ -1,7 +1,5 @@
 /* Flexbox */
 
-
-
 /* 
 
 - Работа с контейнером
@@ -10,10 +8,12 @@
 dispay: flex;
 2. устонавливаем главную ось
 flex-direction
-3. устонавливаем выравнивание главной оси 
-justify-content
-4. выравниваем по поперечной оси 
-align-items
+	если row
+		3. устонавливаем выравнивание главной оси 
+		justify-content
+	если column
+		4. выравниваем по поперечной оси 
+		align-items
 
 - Работа с элементами в нутри контейнера
 1. flex-wrap
@@ -21,16 +21,12 @@ align-items
 3. align-content
 
 - Правила для дочерних элементов flex-контейнера
-1. flex-basis
-2. flex-grow
-3. flex-shrink
+1. flex-basis размер элемента по умолчанию
+2. flex-grow увеличивает элемент
+3. flex-shrink уменьшает элемент
 4. flex
 5. align-self
 6. order
-
-
-
-
 
 
 Для ищменения направления текста
@@ -40,7 +36,6 @@ direction: rtl;
 */
 .container { 
 	/* display: inline-flex; */
-	display: flex;
 	/* Направление осей в контейнере 
 	    flex-direction: column;
     	flex-direction: column-reverse;
@@ -60,15 +55,13 @@ direction: rtl;
 		flex-wrap: nowrap | wrap | wrap-reverse;
 	*/
 
-
-	justify-content: flex-end;
-	flex-direction: row-reverse;
+display: flex;
 	.item { 
 		padding: 10px;
 		/* flex: 1; задает ширину лоя каждого элемента конейнера */
 	}
 	.item-1{
-		flex-grow: 1; /* default 0 */
+		
 	}
 	.item-2{
 
