@@ -14,18 +14,19 @@ flex-direction
 	если column
 		4. выравниваем по поперечной оси 
 		align-items
+		align-content
 
 - Работа с элементами в нутри контейнера
 1. flex-wrap
-2. flex-flow
-3. align-content
+2. flex-flow  сокращение для flex-direction и flex-wrap. (flex-flow:  направаление_главной_оси многострочность;) 
+
 
 - Правила для дочерних элементов flex-контейнера
 1. flex-basis размер элемента по умолчанию
 2. flex-grow увеличивает элемент
 3. flex-shrink уменьшает элемент
-4. flex
-5. align-self
+4. flex сокращение flex-basis -grow -shrink
+5. align-self выравниваем элемент (для контейнера align-items)
 6. order
 
 
